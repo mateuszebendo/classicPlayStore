@@ -1,9 +1,27 @@
-import { View, StyleSheet, TextInput, FlatList } from 'react-native'
+import React from 'react';
+import { View, StyleSheet, TextInput, FlatList } from 'react-native';
 import Categories from './Categories';
+import { useRoute } from '@react-navigation/native';
 
-const categorias: string[] = ['APPS', 'GAMES', 'FILMES & TV', 'LIVROS'];
+type Categoria = {
+    nome: string,
+    endereco: string
+}
+
+const categorias: Categoria[] = [
+    {
+        nome: 'APLICATIVOS',
+        endereco: 'Aplicativos'
+    },
+    {
+        nome: 'GAMES',
+        endereco: 'Games'
+    }
+];
 
 const Header = () => {
+    const navigation = useRoute();
+
     return (
         <View style={styles.container}>
             <TextInput
@@ -14,8 +32,15 @@ const Header = () => {
                 style={styles.categorias}
                 data={categorias}
                 horizontal
-                renderItem={({ item }) => <Categories texto={item} />}
-                keyExtractor={(item) => item}
+                renderItem={({ item }) => {
+                    const escolhido = navigation.name === item.endereco;
+                    return <Categories
+                        texto={item.nome}
+                        endereco={item.endereco}
+                        escolhido={escolhido}
+                    />;
+                }}
+                keyExtractor={(item) => item.nome}
                 contentContainerStyle={{ gap: 30 }}
             />
         </View>
@@ -36,5 +61,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff'
     },
     categorias: {
+        alignSelf: 'center'
     }
 });
