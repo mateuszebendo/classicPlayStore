@@ -15,12 +15,12 @@ export default Botao;
 
 const styles = StyleSheet.create({
     botao: {
-        flex: 0,
+        flex: 1,
+        padding: 10,
         borderRadius: 30,
         justifyContent: 'center',
         alignItems: 'center',
-        width: '25%',
-        aspectRatio: 3,
         backgroundColor: '#109d58',
+        marginTop: 10
     }
 });

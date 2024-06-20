@@ -26,11 +26,9 @@ export default Header;
 
 const styles = StyleSheet.create({
     container: {
-        flex: 0,
+        flex: 0.20,
         justifyContent: 'space-between',
         padding: 15,
-        width: "100%",
-        aspectRatio: 3,
         backgroundColor: "#109d58"
     },
     input: {
