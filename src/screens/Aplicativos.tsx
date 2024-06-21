@@ -15,6 +15,7 @@ const Aplicativos = () => {
                 <FlatList
                     style={styles.flatList}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                     data={data}
                     keyExtractor={(item) => item}
                     renderItem={({ item }) => <Botao texto={item} />}
@@ -27,6 +28,7 @@ const Aplicativos = () => {
                 <FlatList
                     style={styles.flatList}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                     data={aplicativos}
                     keyExtractor={(item) => item.name}
                     renderItem={({ item }) => <Card app={item} />}
@@ -39,6 +41,7 @@ const Aplicativos = () => {
                 <FlatList
                     style={styles.flatList}
                     horizontal
+                    showsHorizontalScrollIndicator={false}
                     data={aplicativosRecomendados}
                     keyExtractor={(item) => item.name}
                     renderItem={({ item }) => <Card app={item} />}
@@ -67,6 +70,7 @@ const styles = StyleSheet.create({
     titulo: {
         flex: 0,
         marginTop: 20,
+        padding: 10,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },

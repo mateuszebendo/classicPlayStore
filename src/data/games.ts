@@ -27,7 +27,7 @@ export const games: App[] = [
     },
     {
         id: 5, 
-        name: 'Jogo da Jenny Mod', 
+        name: 'Minecraft PE', 
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDqWxkxeQLR_Vu8Up6c7W6RddzGxWy3Zn3JA&s',
         rating: 4.1
     },

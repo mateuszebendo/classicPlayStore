@@ -32,6 +32,7 @@ const Header = () => {
                 style={styles.categorias}
                 data={categorias}
                 horizontal
+                showsHorizontalScrollIndicator={false}
                 renderItem={({ item }) => {
                     const escolhido = navigation.name === item.endereco;
                     return <Categories
@@ -58,7 +59,7 @@ const styles = StyleSheet.create({
     },
     input: {
         padding: 10,
-        backgroundColor: '#fff'
+        backgroundColor: '#fff',
     },
     categorias: {
         alignSelf: 'center'
