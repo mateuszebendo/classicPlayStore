@@ -1,7 +1,6 @@
 <div style="text-align: center;"> <h1>Inspirações: </h1>
     <img src="https://github.com/mateuszebendo/classicPlayStore/blob/master/public/modelo.jpg" alt="screenshot">
     <img src="https://androidcentral-data.community.forum/attachments/176/176644-8c273c50d3aa6b022f40eda93c601ad4.jpg" alt="screenshot">
-    <img src="https://androidapksfree.com/wp-content/uploads/2017/10/playstore-1-412x672.jpeg" alt="screenshot" width="300" height="534">
     <h1>Projeto Final: </h1>
     <img src="https://github.com/mateuszebendo/classicPlayStore/blob/master/public/aplicativoFinal.gif" alt="screenshot">
   </div>
